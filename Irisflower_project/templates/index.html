@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      </header>
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
+          <img class="lg:w-3/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src="../static/flowers.png">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-purple-800">Iris Flowers Classification Project</h1>
+            <p class="mb-8 leading-relaxed">Clasificador para las flores Iris: al introducir la longitud y el ancho de sépalos y pétalos, el modelo predecirá si es una flor de tipo Iris setosa, Iris virginica o Iris versicolor.
+            </p>
+            <p class="mb-8 leading-relaxed">Generalmente, la Iris setosa tiene el largo de sus sepalos entre 4.3 cm y 5.8cm, el ancho entre 2.9cm y 4.4cm, el largo de sus pétalos entre 1.1 y 1.9 y el largo, entre 0.1 y 0.6 
+            </p>
+          </div>
+        </div>
+      </section> 
+      <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-2 mx-auto">
+          <div class="flex flex-col text-center w-full mb-8">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-purple-800 underline">Predecir</h1>
+          </div>
+          <div class="form-container text-center items-center justify-center">
+            <form class="form-horizontal" action = "/predict" method="post">
+            
+                <div class="form-group row py-2">
+                  <label class="control-label col-sm-2 " for="SepalLengthCm" >Largo del sépalo (cm):</label>
+                  <div class="col-sm-4">
+                    <input type="number" class="form-control" id="SepalLengthCm" name="SepalLengthCm">
+                  </div>
+                </div>
+                
+                <div class="form-group row py-2">
+                  <label class="control-label col-sm-2" for="SepalWidthCm">Ancho del sépalo (cm):</label>
+                  <div class="col-sm-4">          
+                    <input type="number" class="form-control" id="SepalWidthCm" name="SepalWidthCm">
+                  </div>
+                </div>
+    
+                <div class="form-group row py-2">
+                  <label class="control-label col-sm-2" for="PetalLengthCm">Largo de pétalo (cm):</label>
+                  <div class="col-sm-4">
+                    <input type="number" class="form-control" id="PetalLengthCm" name="PetalLengthCm">
+                  </div>
+                </div>
+                
+                <div class="form-group row py-2">
+                  <label class="control-label col-sm-2" for="PetalWidthCm">Ancho del pétalo (cm):</label>
+                  <div class="col-sm-4">          
+                    <input type="number" class="form-control" id="PetalWidthCm" name="PetalWidthCm">
+                  </div>
+                </div>
+                
+                <div class="form-group row py-2"> 
+                <label class="control-label col-sm-2" for="">&nbsp;</label>                
+                  <div class="col-sm-offset-2 col-sm-4">
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                  </div>
+                </div>
+              </form>
+        </div>
+      </section>  
+        
+</body>
+</html>
