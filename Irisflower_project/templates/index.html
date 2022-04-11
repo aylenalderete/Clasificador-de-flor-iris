@@ -21,48 +21,48 @@
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-purple-800">Iris Flowers Classification Project</h1>
             <p class="mb-8 leading-relaxed">Clasificador para las flores Iris: al introducir la longitud y el ancho de sépalos y pétalos, el modelo predecirá si es una flor de tipo Iris setosa, Iris virginica o Iris versicolor.
             </p>
-            <p class="mb-8 leading-relaxed">Generalmente, la Iris setosa tiene el largo de sus sepalos entre 4.3 cm y 5.8cm, el ancho entre 2.9cm y 4.4cm, el largo de sus pétalos entre 1.1 y 1.9 y el largo, entre 0.1 y 0.6 
+            <!-- <p class="mb-8 leading-relaxed">Generalmente, la Iris setosa tiene el largo de sus sepalos entre 4.3 cm y 5.8cm, el ancho entre 2.9cm y 4.4cm, el largo de sus pétalos entre 1.1 y 1.9 y el largo, entre 0.1 y 0.6  -->
             </p>
           </div>
         </div>
       </section> 
       <section class="text-gray-600 body-font relative">
-        <div class="container px-5 py-2 mx-auto">
+        <div class="container px-5 py-2 mx-auto" style="align-items: center; display: flex;flex-direction: column;">
           <div class="flex flex-col text-center w-full mb-8">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-purple-800 underline">Predecir</h1>
           </div>
-          <div class="form-container text-center items-center justify-center">
+          <div class="form-container text-center items-center justify-center" style="width: 100%;">
             <form class="form-horizontal" action = "/predict" method="post">
             
-                <div class="form-group row py-2">
+                <div class="form-group row py-2" style="text-align: center;display: flex;justify-content: center;">
                   <label class="control-label col-sm-2 " for="SepalLengthCm" >Largo del sépalo (cm):</label>
                   <div class="col-sm-4">
                     <input type="text" class="form-control" id="SepalLengthCm" name="SepalLengthCm">
                   </div>
                 </div>
                 
-                <div class="form-group row py-2">
+                <div class="form-group row py-2" style="text-align: center;display: flex;justify-content: center;">
                   <label class="control-label col-sm-2" for="SepalWidthCm">Ancho del sépalo (cm):</label>
                   <div class="col-sm-4">          
                     <input type="text" class="form-control" id="SepalWidthCm" name="SepalWidthCm">
                   </div>
                 </div>
     
-                <div class="form-group row py-2">
+                <div class="form-group row py-2" style="text-align: center;display: flex;justify-content: center;">
                   <label class="control-label col-sm-2" for="PetalLengthCm">Largo de pétalo (cm):</label>
                   <div class="col-sm-4">
                     <input type="text" class="form-control" id="PetalLengthCm" name="PetalLengthCm">
                   </div>
                 </div>
                 
-                <div class="form-group row py-2">
+                <div class="form-group row py-2" style="text-align: center;display: flex;justify-content: center;">
                   <label class="control-label col-sm-2" for="PetalWidthCm">Ancho del pétalo (cm):</label>
                   <div class="col-sm-4">          
                     <input type="text" class="form-control" id="PetalWidthCm" name="PetalWidthCm">
                   </div>
                 </div>
                 
-                <div class="form-group row py-2"> 
+                <div class="form-group row py-2" style="text-align: center;display: flex;justify-content: center;"> 
                 <label class="control-label col-sm-2" for="">&nbsp;</label>                
                   <div class="col-sm-offset-2 col-sm-4">
                     <button type="submit" class="btn btn-primary purple-800">Predecir</button>
